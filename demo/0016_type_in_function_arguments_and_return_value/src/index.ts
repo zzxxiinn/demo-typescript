@@ -1,21 +1,11 @@
-interface Knife {
-  cut();
+function sum(x: number, y: number): number {
+  return x + y;
 }
 
-interface BottleOpener {
-  openBottle();
+sum(3, 8); // number 11
+
+function hello(name: string): string {
+  return `Hello ${name}`;
 }
 
-interface Screwdriver {
-  turnScrew();
-}
-
-type SwissArmyKnife = Knife & BottleOpener & Screwdriver;
-
-function use(tool: SwissArmyKnife) {
-  console.log('I can do anything');
-
-  tool.cut();
-  tool.openBottle();
-  tool.turnScrew();
-}
+hello('world'); // Hello world
