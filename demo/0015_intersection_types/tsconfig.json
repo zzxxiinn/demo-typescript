@@ -7,7 +7,8 @@
     "preserveConstEnums": true,
     "outDir": "dist",
     "sourceMap": false,
-    "pretty": true
+    "pretty": true,
+    "lib": [ "es2015", "dom" ]
   },
   "include": [
     "src/*"
