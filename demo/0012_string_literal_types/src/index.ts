@@ -79,15 +79,15 @@ function buyPet(pet: Species, name: string): Pet {
 }
 
 function petIsCat(pet: Pet): pet is Cat {
-  return pet.species === "cat";
+  return pet.species === 'cat';
 }
 
 function petIsDog(pet: Pet): pet is Dog {
-  return pet.species === "dog";
+  return pet.species === 'dog';
 }
 
 function petIsBird(pet: Pet): pet is Bird {
-  return pet.species === "bird";
+  return pet.species === 'bird';
 }
 
 function playWithPet(pet: Pet) {
@@ -96,7 +96,7 @@ function playWithPet(pet: Pet) {
   if (petIsCat(pet)) {
     pet.eat();
     pet.sleep();
-  } else if (petIsDog(pet)){
+  } else if (petIsDog(pet)) {
     pet.eat();
     pet.walk();
     pet.sleep();
@@ -105,13 +105,13 @@ function playWithPet(pet: Pet) {
     pet.sing();
     pet.sleep();
   } else {
-    throw "An unknown pet. Did you buy a rock?";
+    throw 'An unknown pet. Did you buy a rock?';
   }
 }
 
-let dog = buyPet(myFavoritePet, "Rocky");
+let dog = buyPet(myFavoritePet, 'Rocky');
 
-playWithPet(dog)
+playWithPet(dog);
 // Output:  Hey Rocky, lets play.
 //          Rocky eats.
 //          Rocky walks.
