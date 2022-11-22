@@ -7,7 +7,9 @@ function getId(x: Element) {
 // If you set --strictNullChecks when running tsc (or set
 // this flag in your tsconfig.json), then types no longer permit null:
 
-getId(null)
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+getId(null) // TS2345: Argument of type 'null' is not assignable to parameter of type 'Element'.
 
 
 
@@ -19,4 +21,4 @@ function getUId(x: Element | null) {
     }
 }
 
-getId(null);
+getUId(null);
