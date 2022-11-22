@@ -5,6 +5,6 @@ day = [0, 'Monday'];
 console.log(day[0]); // -> 0
 console.log(day[1]); // -> Monday
 
-day[3] = 'Saturday'; // Tuple type '[number, string]' of length '2' has no element at index '3'.
+// day[3] = 'Saturday'; // Tuple type '[number, string]' of length '2' has no element at index '3'.
 day.push('Saturday');
-day.push(true); // Argument of type 'boolean' is not assignable to parameter of type 'string | number'.
+// day.push(true); // Argument of type 'boolean' is not assignable to parameter of type 'string | number'.

@@ -16,13 +16,13 @@ interface IRunnable<T, U> {
   run(input: T): U;
 }
 
-var runnable: IRunnable<string, number> = {
+const runnable: IRunnable<string, number> = {
   run(input) {
     return 1;
   },
 };
-var input: string = '123';
-var result_01: number = runnable.run(input);
+const input = '123';
+const result_01: number = runnable.run(input);
 
 //====================================//
 

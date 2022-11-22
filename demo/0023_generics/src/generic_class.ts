@@ -7,7 +7,7 @@ class TreeNode<T> {
     return new TreeNode(this.wasSuccessful, this.error);
   }
 }
-let r1 = new TreeNode(false, 'error: 42'); // Compiler infers T to string
-let r2 = new TreeNode(false, 42); // Compiler infers T to number
-// let r3 = new TreeNode<string>(true, null); // Explicitly set T to string
+const r1 = new TreeNode(false, 'error: 42'); // Compiler infers T to string
+const r2 = new TreeNode(false, 42); // Compiler infers T to number
+const r3 = new TreeNode<string>(true, null); // Explicitly set T to string
 // let r4 = new TreeNode<string>(true, 4); // Compilation error because 4 is not a string
